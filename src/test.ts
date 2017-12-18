@@ -1,5 +1,3 @@
-import './polyfills.ts';
-
 import 'zone.js/dist/long-stack-trace-zone';
 import 'zone.js/dist/proxy.js';
 import 'zone.js/dist/sync-test';
@@ -19,7 +17,7 @@ Promise.all([
   System.import('@angular/core/testing'),
   System.import('@angular/platform-browser-dynamic/testing')
 ])
-  // First, initialize the Angular testing environment.
+// First, initialize the Angular testing environment.
   .then(([testing, testingBrowser]) => {
     testing.getTestBed().initTestEnvironment(
       testingBrowser.BrowserDynamicTestingModule,
